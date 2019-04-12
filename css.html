@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        animation-name: kirie;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        /* 
+        reverse 倒播
+        */ 
+        animation-timing-function:ease;
+        /* ease-in 開頭減速 */
+        animation-timing-function:steps(5,end);
+    }
+    @keyframes kirie{
+        0%{
+            width: 200px;
+            top: 0px;
+            left: 0px;
+            border-radius: 50%;
+        }
+        50%{
+            width: 450px;
+            top: 40px;
+            right: 400px;
+            border-radius: 0;
+        }
+        100%{
+            width: 200px;
+            top: 0px;
+            left: 0px;
+            border-radius: 50%;
+           
+        }
+    }
+    h1{
+        animation: type 1s steps(1,start) infinite;
+        
+    }
+    @keyframes type{
+        50%{
+            border:0px;
+        }
+        100%{
+            border-right:1px solid black;
+        }
+    }
+    body{
+        animation: bg 5s linear infinite alternate;
+        background: linear-gradient(45deg  ,red,yellow);
+        background-size: 400% 400%;
+    }
+    @keyframes bg{
+        0%{
+           background-position: 0% 50%;
+        }
+        100%{
+            background-position: 100% 50%;
+        }
+    }
+    </style>
+</head>
+<body>
+        <h1>藤原</h1>
+    <!-- <img src="../190328/img/隼姬莉叶1.webp" width="300px"> -->
+    <img src="../190328/img/IOmfY9G.gif" width="200px">
+    
+    
+</body>
+</html>
